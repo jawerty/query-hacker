@@ -34,6 +34,7 @@ function passFixedQuery(tabId, fixedQuery) {
     });
 }
 document.getElementById('query-fix').addEventListener('click', function() {
+    document.getElementById('loading').style.display = "block"
     API.tabs.query({active: true, currentWindow: true}, async function(tabs){
         const url = tabs[0].url;
         const urlObj = new URL(url);
@@ -42,8 +43,13 @@ document.getElementById('query-fix').addEventListener('click', function() {
             const activeQuery = await getActiveQuery(tabs[0].id)
             const fixedQuery = await fixQuery(activeQuery)
             await passFixedQuery(tabs[0].id, fixedQuery)
+            document.getElementById('loading').style.display = "none"
+        } else {
+            document.getElementById('loading').style.display = "none"
+
         }
          
     });
+        
 
 });

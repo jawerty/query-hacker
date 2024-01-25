@@ -36,6 +36,9 @@ async function main() {
 		} else if (request.action === "get_fixed_query") {
 			const fixedQuery = request.fixed_query
 			document.querySelector("textarea[aria-label=\"Search\"]").value = fixedQuery
+			sendResponse({
+				finished: true
+			})
 		}
 
 
