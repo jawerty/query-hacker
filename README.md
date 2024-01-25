@@ -14,4 +14,4 @@ How it augments the query
 2) Then it uses RAG using previous successful queries from a vector db to generate the new query
 
 # How to use it
-Make a Google Search, open up the popup and click "Query Fix". It should only take a moment for a new query to replace your current query
+Make a Google Search, open up the popup and click "Query Fix". It should only take a moment for a new query to replace your current query![Screen Shot 2024-01-25 at 1 28 11 AM](https://github.com/jawerty/query-hacker/assets/1999719/b0ff2b58-eb7b-4eac-9d4d-6cbbe83de6eb)
