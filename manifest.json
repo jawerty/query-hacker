@@ -1,0 +1,25 @@
+{
+  "name": "10x Queries",
+  "description": "Query Hacker",
+  "version": "0.5.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_security_policy": {
+    "extension_pages": "worker-src 'self'; script-src 'wasm-unsafe-eval' 'self'; object-src 'self';"
+  },
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["webRequest", "storage"],
+  "action": {
+    "default_title": "Click Me",
+    "default_popup": "popup.html"
+  }
+}
