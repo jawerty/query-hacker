@@ -1,5 +1,5 @@
 # query-hacker (10x Queries)
-query-hacker is a simple tool that will update your Google query with a more optimized query based on your behavior.
+What is this? query-hacker is a simple tool that will update your Google query with a more optimized query based on your behavior.
 
 I built this during this [livestream](https://youtube.com/live/g7ZURZgwZaw)
 
