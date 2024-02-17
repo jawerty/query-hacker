@@ -3,6 +3,8 @@ What is this? query-hacker is a simple tool that will update your Google query w
 
 I built this during this [livestream](https://youtube.com/live/g7ZURZgwZaw)
 
+I made this mostly because I wanted a way to improve my Google experience without needing to go off platform.
+
 You can download the project and unpack it in a chrome browser.
 
 # How I built it
